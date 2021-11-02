@@ -1,0 +1,536 @@
+/*  Спецификация  */
+@font-face {
+	font-family: 'GillSansMT';
+	src: url('../fonts/GillSansMT.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/GillSansMT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/GillSansMT.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT.TTF')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'GillSansMT';
+	src: url('../fonts/GillSansMT-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/GillSansMT-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/GillSansMT-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT-Boldsvg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: bold;
+}
+
+body {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+button,
+button:hover,
+button:focus {
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #26272d;
+	line-height: 1.1em;
+}
+
+h1 {
+	font-size: 62px;
+}
+
+h2 {
+	font-size: 42px;
+}
+
+p {
+	color: #8c8f94;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	font-size: 16px;
+	color: #26272d;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #26272d;
+	text-decoration: none;
+}
+
+
+
+.btn {
+	border-radius: 21px;
+	background-color:  #267df4;;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	font-weight: 400;
+	font-size: 16px;
+	display: flex;
+	text-align: center;
+	transition: all 0.5s ease;
+
+}
+
+.btn:hover {
+	background: #013b8d;;
+	color: #fff;
+	box-shadow: 0 8px 20px rgb(37 0 249 / 25%);
+}
+
+.btn:active {
+	background: #3214df;
+	box-shadow: none
+}
+
+/*  Первый экран  */
+.header {
+	padding-top: 41px;
+    background: url(../img/header.jpg) no-repeat center bottom / cover ;
+}
+
+.img__burger {
+	margin-right: 40px;
+}
+
+.menu__link{
+	color: #26272d;
+	transition: opacity .5s ease;
+}
+
+.menu__link:hover{
+	opacity: 0.5;
+}
+
+.menu__item {
+	margin-right: 40px;
+}
+
+.logo {
+	display: block;
+	background: url(../img/logo.png);
+	width: 133px;
+	height: 15px;
+}
+
+.menu__btn {
+	width: 132px;
+	padding: 8px 0 10px;
+}
+
+.btn-contact {
+	margin-right: 8px;
+}
+
+.offer {
+	max-width: 780px;
+	margin: 132px auto 0;
+	text-align: center;
+}
+
+.offer__text {
+	margin: 41px 0 66px;
+	font-size: 20px;
+}
+
+.btn-video {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	border-radius: 25px;
+	border: 1px solid #26272d;
+	transition: box-shadow .3s ease;
+	margin: 0  auto;
+	width: 205px;
+	height: 50px;
+}
+
+.btn-video:hover {
+	box-shadow: 0 8px 20px rgb(0 0 0/ 25%);
+	transition: box-shadow .3s ease;
+}
+
+.btn-img {
+	width: 10px;
+	height: 10px;
+	margin-right: 15px;
+}
+
+.iphone {
+	display: block;
+	margin: 55px auto 0;
+	transition: transform .5s ease;
+}
+
+
+.header:hover .iphone {
+	transform: scale(1.03) translate(0px, -6px);
+	transition: transform .5s ease;
+}
+
+/* вторая секция */
+
+.features {
+	padding: 124px 0 78px;
+}
+
+.future__title {
+	margin-top: 45px;
+	font-size: 26px;
+
+}
+
+.future__text {
+	max-width: 505px;	
+	margin-top: 49px;
+	font-size: 18px;
+}
+
+.future__text:last-child {
+	margin-top: 20px;
+}
+
+/* третья секция */
+
+.applefut {
+	padding: 55px 0;
+	overflow-x: hidden;
+}
+
+.app-screen {
+	background: url(../img/iPhone_6_down.png) no-repeat center center / contain;
+	width: 642px;
+	height: 548px;
+	transition: transform .5s ease;
+	margin-left: -120px;
+}
+
+.section-title__heading {
+	margin: 20px 0 76px;
+}
+
+.section-title__text {
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+.section-title__text:last-of-type {
+	margin-bottom: 0px;
+}
+
+.applefut:hover .app-screen {
+	transform: scale(1.03);
+	transition: transform .5s ease;
+}
+
+.apple-btn {
+	margin-top: 75px;
+	display: flex;
+}
+
+.app__btn {
+	width: 202px;
+	height: 42px;
+}
+
+.app__btn::after {
+	content: "";
+	display: block;
+	background: url(../img/Arrow_Icon.svg);
+	width: 13px;
+	height: 12px;
+	margin-left: 30px;
+	transition: transform .5s ease;
+}
+
+.map__icons:hover {
+	transform: scale(1.05);
+	transition: transform .5s ease;
+}
+
+.app__btn:hover::after {
+	transform: translate(5px, 0px);
+}
+
+.second__btn {
+	width: 142px;
+	height: 42px;
+}
+
+/* четвертая секция */
+
+.map {
+	overflow-x: hidden;
+	padding: 55px 0 224px;
+}
+
+.map__title {
+	width: 290px;
+	margin-bottom: 67px;
+}
+
+.map__text {
+	margin-bottom: 25px;
+	width: 442px;
+	font-size: 20px;
+}
+
+.map__text:last-of-type {
+	margin-bottom: 69px;
+}
+
+.small__title {
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 31px;
+}
+
+.content__icon {
+	display: flex;
+}
+
+.map__icons {
+	margin-right: 31px;
+	display: block;
+	width: 138px;
+	transition: transform .5s ease;
+}
+
+
+.map__icons:last-of-type {
+	margin-right: 0;
+}
+
+.world-map {
+	background: url(../img/World_Map.svg) no-repeat center center / contain;
+	max-width: 627px;
+	height: 401px;
+	margin-left: 71px;
+	transition: transform .5s ease;
+}
+
+.world-map:hover {
+	transform: scale(1.03);
+	transition: transform .5s ease;
+}
+
+
+.map__icons:hover {
+	transform: scale(1.05);
+	transition: transform .5s ease;
+}
+
+
+/* футер */
+.footer {
+	padding-bottom: 200px;
+}
+
+.footer-logo {
+	display: block;
+	background: url(../img/logo.png);
+	width: 133px;
+	height: 15px;
+	margin-bottom: 31px;
+}
+
+.footer__text {
+	font-size: 14px;
+	margin-bottom: 28px;
+	width: 232px;
+}
+
+.btn_footer{
+	border-radius: 10px;
+	background: black;
+	width: 140px;
+	height: 42px;
+}
+
+.btn_footer:hover {
+	background: rgb(27, 27, 27);
+	box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
+}
+
+
+.footer__title {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.footer__item a {
+	font-size: 12px;
+	color: #8c8f94;
+	transition: color .5s ease;
+}
+
+.footer__item a:hover {
+	color: #26272d;
+	transition: color .5s ease;
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+	.world-map {
+		margin-left: -20px;
+	}
+
+	.map{
+		padding-bottom: 150px;
+	}
+
+	.footer {
+		padding-bottom: 145px;
+	}
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+	.map {
+		padding: 30px 0 100px;
+	}
+
+	.map__title, .map__text {
+		width: 100%;
+	}
+
+	.app-screen {
+		margin-left: -190px;
+		height: 500px;
+	}
+
+	.map__text, .section-title__text {
+		font-size: 18px;
+	}
+
+	.world-map {
+		margin-left: 0;
+		margin-top: 45px;
+	}
+	
+	.app__btn {
+		width: 202px;
+		height: 42px;
+		margin-right: 20px;
+	}
+
+	.app__btn::after {
+		display: none;	
+	}
+
+	.footer__text {
+		width: 158px;
+	}
+
+	.section-title__heading{
+		margin-bottom: 40px;
+	}
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+	h1 {
+		font-size: 60px;
+	}
+	.future__text:last-of-type {
+		margin-bottom: 40px	;
+	}
+
+	.app-screen {
+		height: 550px;
+		margin-left: -100px;
+	}
+
+	applefut {
+		padding-top: 30;
+	}
+
+	.features {
+		padding: 75px 0 20px;
+	}
+
+	.apple-btn {
+		margin-top: 50px;
+	}
+
+	.map__title {
+		margin-bottom: 40px;
+	}
+
+	.btn_footer {
+		margin-bottom: 20px;
+	}
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+	.app-screen {
+		height: 450px;
+	}
+
+	.iphone {
+		width: 90%;
+	}
+
+	.footer {
+		padding-bottom: 100px;
+	}
+ }
+
+ @media (max-width: 451px){
+	.app-screen {
+		height: 370px;
+	}
+	h1 {
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	.offer__text {
+		font-size: 15px;
+	}
+
+	.future__title, .section-title__heading, .map__title {
+		font-size: 30px;
+	}
+
+	.map__text, .section-title__text, .future__text{
+		font-size: 15px;
+	}
+ }
+
+ @media (max-width: 421px){
+	.app-screen {
+		height: 300px;
+		margin-left: -145px	;
+	}
+	h1 {
+		font-size: 40px;
+	}
+ }
+
+ @media (max-width: 351px){
+	.app-screen {
+		height: 275px;
+		margin-left: -190px	;
+	}
+ }
